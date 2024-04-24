@@ -1,0 +1,30 @@
+@use "../../scss/mixins";
+
+.header {
+  @include mixins.flex(row, space-between, flex-end);
+  margin-bottom: 2.5rem;
+  font-size: 1.7rem;
+  position: relative;
+  .logo-container {
+    height: 5rem;
+    width: 5rem;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .options {
+    width: 100%;
+    justify-content: space-around;
+    @include mixins.flex(row, space-evenly, baseline);
+    .option {
+      padding: 0px 1rem;
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      white-space: nowrap;
+      transition: 0.3s ease opacity;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+}

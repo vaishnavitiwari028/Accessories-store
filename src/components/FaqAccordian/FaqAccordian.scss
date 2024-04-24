@@ -1,0 +1,42 @@
+.accordian-holder {
+  width: 100%;
+  .accordian-item {
+    margin: 5px 0;
+    .accordian-item_title {
+      font-size: 2rem;
+      background-color: rgb(220, 220, 220);
+      padding: 0.4em;
+      border-radius: 2px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgb(200, 200, 200);
+      }
+      &.active-title {
+        background-color: rgb(140, 140, 140);
+        color: white;
+      }
+    }
+    .accordian-item_description {
+      font-size: 1.8rem;
+      display: none;
+      background-color: white;
+    }
+    .active {
+      transform-origin: top;
+      transition: 1s ease transform;
+      padding: 0.3em;
+      animation: reveal ease 0.3s;
+      display: block;
+      transform: none;
+    }
+  }
+}
+@keyframes reveal {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: none;
+  }
+}

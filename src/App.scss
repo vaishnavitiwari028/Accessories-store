@@ -1,0 +1,61 @@
+@use "./scss/responsive" as r;
+:root {
+  font-size: 10px;
+  --white: rgb(255, 255, 255);
+  --lightest-grey: rgb(241, 241, 241);
+  --light-grey: rgb(150, 150, 150);
+  --dark-grey: rgb(74, 74, 74);
+  --black: rgb(20, 20, 20);
+  @include r.lg {
+    font-size: 9px;
+  }
+  @include r.md {
+    font-size: 8px;
+  }
+  @include r.sm {
+    font-size: 7px;
+  }
+  @include r.sm {
+    font-size: 6px;
+  }
+}
+body {
+  font-family: "Open Sans Condensed";
+  font-size: 2rem;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+button,
+a {
+  display: inline-block;
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+.reveal {
+  animation: revealanimation 1s ease-in-out;
+}
+
+.global-container {
+  width: 95vw;
+  max-width: 1200px;
+  margin: auto;
+}
+@keyframes revealanimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

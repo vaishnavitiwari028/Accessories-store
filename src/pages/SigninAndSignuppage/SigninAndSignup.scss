@@ -1,0 +1,28 @@
+@use "../../scss/responsive" as r;
+
+.signin-signup {
+  display: flex;
+  justify-content: space-around;
+  margin-top: min(12vh, 10rem);
+  h4 {
+    margin: 1rem 0;
+  }
+  span {
+    font-size: 1.7rem;
+  }
+
+  @include r.xs {
+    flex-direction: column;
+  }
+}
+
+.form-container {
+  display: flex;
+  width: 30vw;
+  margin: 0 auto;
+  flex-direction: column;
+  @include r.xs {
+    width: 60vw;
+    margin-bottom: 5rem;
+  }
+}

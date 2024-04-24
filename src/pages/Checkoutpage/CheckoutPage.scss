@@ -1,0 +1,28 @@
+.checkout_wrapper {
+  width: 75%;
+  display: flex;
+  min-height: 90vh;
+  flex-direction: column;
+  margin: 10vh auto 0;
+  text-align: center;
+  .checkout_header_container {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    border-bottom: 1px solid grey;
+    .checkout_header {
+      margin-bottom: 1rem;
+      width: 23%;
+      text-align: center;
+      &:last-child {
+        width: 8%;
+      }
+    }
+  }
+  .total {
+    font-size: 1.5rem;
+    align-self: flex-end;
+  }
+}

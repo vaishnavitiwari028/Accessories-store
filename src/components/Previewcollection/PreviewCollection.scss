@@ -1,0 +1,44 @@
+@use "../../scss/responsive" as r;
+
+.collection-preview {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0;
+  padding: 2rem;
+  .title {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  .preview {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    margin-top: 2rem;
+  }
+  .view_all_link {
+    font-size: 1.7rem;
+    margin: 2rem 0;
+    align-self: flex-end;
+    background-color: var(--lightest-grey);
+    font-weight: 700;
+    padding: 1.2rem 1.6rem;
+    color: var(--dark-grey);
+    border-radius: 5%;
+    transition: 0.2s ease-out all;
+    &:hover,
+    &:focus {
+      color: var(--black);
+    }
+  }
+
+  @include r.lg {
+    .preview {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @include r.xs {
+    .preview {
+      grid-template-columns: 1fr;
+    }
+  }
+}

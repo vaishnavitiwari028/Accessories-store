@@ -1,0 +1,28 @@
+.custom-button {
+  padding: 1rem 1.2rem;
+  color: white;
+  background-color: black;
+  font-size: 1.5rem;
+  opacity: 0.9;
+  font-weight: 700;
+  transition: 0.3s ease all;
+  border: 0.15em solid;
+  border-radius: 0.2em;
+  cursor: pointer;
+}
+.inverted {
+  color: black;
+  background-color: white;
+}
+.custom-button:hover {
+  background-color: white;
+  color: black;
+  outline: none;
+}
+.inverted:hover {
+  color: white;
+  background-color: black;
+}
+.custom-button:disabled {
+  cursor: default;
+}

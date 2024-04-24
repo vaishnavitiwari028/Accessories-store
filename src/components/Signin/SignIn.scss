@@ -1,0 +1,15 @@
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  :nth-child(2) {
+    font-size: 1.5rem;
+    margin: 0 1rem;
+  }
+}
+.form-error {
+  color: red;
+  font-size: 1.6rem;
+  height: 1.6rem;
+  padding: 0.7em 0;
+}

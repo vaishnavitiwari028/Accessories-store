@@ -1,0 +1,51 @@
+.collection-item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--lightest-grey);
+  position: relative;
+  .image {
+    border-top: 2rem solid var(--lightest-grey);
+    width: 100%;
+    min-height: 20rem;
+    max-height: 80%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .custom-button {
+    position: absolute;
+    opacity: 0;
+    top: 40%;
+    z-index: 10;
+    transition: 0.5s ease opacity;
+  }
+  .mobile-add_To_cart {
+    display: flex;
+    z-index: 10;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--lightest-grey);
+    // color: var(--white);
+    white-space: nowrap;
+    padding: 1em 0.5em;
+    .seperator {
+      margin: 0 1rem;
+      justify-self: baseline;
+    }
+  }
+}
+
+.collection-item:hover {
+  .custom-button {
+    opacity: 0.8;
+  }
+}
+.link {
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  position: absolute;
+}

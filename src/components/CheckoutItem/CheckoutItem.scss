@@ -1,0 +1,36 @@
+.checkout_item_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  text-align: center;
+  border-bottom: 1px solid grey;
+
+  .image_container {
+    width: 23%;
+    height: 90%;
+    margin: 1rem;
+    background-color: #f1f1f1;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .checkout_item {
+    width: 23%;
+    &:last-child {
+      width: 8%;
+      cursor: pointer;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+    .increase_decrease {
+      font-size: 1.5rem;
+      font-weight: 300;
+      cursor: pointer;
+      margin: 3px;
+    }
+  }
+}

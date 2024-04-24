@@ -1,0 +1,7 @@
+export const SET_CURRENT_USER = "SET_CURRENT_USER";
+export const SET_CART = "SET_CART";
+export const TOGGLE_CART_DROPDOWN = "TOGGLE_CART_DROPDOWN";
+export const ADD_TO_CART = "ADD_TO_CART";
+export const REMOVE_ITEM = "REMOVE_ITEM";
+export const CLEAR_FROM_CART = "CLEAR_FROM_CART";
+export const UPDATE_COLLECTION = "UPDATE_COLLECTION";

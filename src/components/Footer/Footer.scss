@@ -1,0 +1,28 @@
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  bottom: 0;
+  background-color: var(--lightest-grey);
+  justify-content: space-around;
+  padding: 2rem 1rem;
+  margin-top: 100px;
+  h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 1rem 0;
+  }
+}
+
+.footer-column {
+  a,
+  a:visited {
+    color: var(--dark-grey);
+    font-size: 1.5rem;
+    text-align: center;
+    transition: 0.3s color;
+    &:hover {
+      color: black;
+    }
+  }
+}

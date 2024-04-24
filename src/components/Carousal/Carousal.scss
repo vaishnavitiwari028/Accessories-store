@@ -1,0 +1,108 @@
+.carousal_wrapper {
+  overflow: hidden;
+  position: relative;
+}
+.carousal_container {
+  display: flex;
+  width: calc(100vw - 2rem);
+  transform: translateX(-100vw);
+  transition: 1s ease all;
+}
+.slide_left {
+  transition-duration: 1s;
+  transform: translateX(0vw);
+}
+.slide_right {
+  transition-duration: 1s;
+  transform: translateX(-200vw);
+}
+.slide_once {
+  transform: none;
+  transition-duration: 1s;
+}
+.slider_img {
+  min-width: 100vw;
+  height: 90vh;
+  position: relative;
+  img {
+    object-fit: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: lavender;
+    background-color: rgb(230, 230, 250);
+  }
+  .overlay-text {
+    color: black;
+    font-size: 4rem;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    z-index: 100;
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem 0;
+    text-shadow: -5px 2px 5px var(--lightest-grey);
+    margin-top: -1rem;
+    align-items: center;
+    padding: 2.5rem;
+    text-align: center;
+    span {
+      padding: 1rem;
+      max-width: 38%;
+      margin-left: auto;
+    }
+
+    &.center {
+      span {
+        margin: auto;
+        font-size: 2rem;
+        border-radius: 0.3em;
+        &::before {
+          font-size: 5rem;
+          content: "ViSound";
+          display: block;
+          line-height: 1.9;
+        }
+      }
+    }
+    &.right {
+      padding-right: 0.5rem;
+    }
+    @media (max-width: 500px) {
+      justify-content: center;
+      align-items: flex-end;
+      font-weight: bold;
+
+      span {
+        max-width: 70%;
+        margin: 3rem auto;
+        background-color: rgb(230, 230, 250, 0.5);
+      }
+    }
+  }
+}
+.controller {
+  position: absolute;
+  z-index: 100;
+  top: 60%;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  padding: 0.3em 0.5em;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.controller-left {
+  right: 90%;
+  color: #000;
+}
+
+.controller-right {
+  left: 90%;
+  color: #000;
+}

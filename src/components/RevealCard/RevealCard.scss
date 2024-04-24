@@ -1,0 +1,11 @@
+.slide-in {
+  height: 100%;
+  width: 100%;
+  transform: translateY(50px);
+  transition: 0.7s 0.5s ease all;
+  opacity: 0;
+}
+.active {
+  transform: none;
+  opacity: 1;
+}
